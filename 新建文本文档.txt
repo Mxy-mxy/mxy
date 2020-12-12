@@ -1,0 +1,21 @@
+git init  //创建被git管理的命令
+
+git status //查看当前的文件处于什么状态
+
+1.git add index.css  //添加一个文件到暂存区
+2.git add css/   //添加一个文件夹到暂存区
+3.git add --all   // 把所有的工作区里的文件放到暂存区
+
+1.git reset HEAD -- index.css   //单独把一个文件从暂存区放到工作区
+2.git reset HEAD -- css/           //单独把一个文件夹从暂存区放到工作区
+3.git reset HEAD -- .                //把所有的暂存区里的文件放到工作区
+
+git commit -m "说明内容"  //将暂存区提交到历史区
+
+git log  //查看版本信息
+
+git reset --hard HEAD^  //向前回退一个版本
+git reset --hard 历史版本号  //回退到指定版本
+
+.gitkeep  //就是为了在保留空文件夹使用的，只有后缀没有名字
+.gitignore //表示在 git 管理你的文件夹中 忽略哪些东西 直接写在 .git同级的文件夹下
